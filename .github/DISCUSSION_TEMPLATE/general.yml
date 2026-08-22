@@ -1,0 +1,10 @@
+title: "[General]: "
+labels:
+  - general
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: What's on your mind?
+    validations:
+      required: true
