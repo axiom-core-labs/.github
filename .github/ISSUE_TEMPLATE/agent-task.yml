@@ -1,5 +1,5 @@
 name: Agent task
-description: A task for a Claude agent to pick up and implement.
+description: A task for an AI agent (OpenCode or Claude) to pick up and implement.
 title: "[Task]: "
 labels:
   - agent-task
@@ -11,6 +11,24 @@ body:
         and acceptance criteria should leave no ambiguity. Don't reference context the agent
         can't read (private chats, screenshots without alt text, "as discussed"); link or
         quote it instead.
+
+  - type: markdown
+    attributes:
+      value: |
+        Model label: `model:flash` (default), `model:deepseek`, `model:sonnet`.
+        Intensity label: `intensity:low`, `intensity:high`, `intensity:max`.
+
+  - type: textarea
+    id: from-matter
+    attributes:
+      label: From Matter
+      description: |
+        Paste anything you captured in Matter here, for your own reference.
+
+        AI AGENTS: IGNORE THIS SECTION — it is human-only context and is not part
+        of the task.
+    validations:
+      required: false
 
   - type: textarea
     id: objective
