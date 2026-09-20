@@ -28,10 +28,10 @@ body:
         Intensity label: `intensity:low`, `intensity:high`, `intensity:max`.
 
   - type: textarea
-    id: context
+    id: task
     attributes:
-      label: Context
-      description: All relevant context for the issue.
+      label: Task
+      description: A clear description of the task to be completed.
     validations:
       required: true
 
