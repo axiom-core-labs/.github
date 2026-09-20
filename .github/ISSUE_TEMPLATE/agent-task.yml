@@ -8,9 +8,7 @@ body:
     attributes:
       value: |
         Write this for an agent, not a human. Be concrete and testable — objective, scope,
-        and acceptance criteria should leave no ambiguity. Don't reference context the agent
-        can't read (private chats, screenshots without alt text, "as discussed"); link or
-        quote it instead.
+        and acceptance criteria should leave no ambiguity.
 
   - type: markdown
     attributes:
@@ -19,18 +17,10 @@ body:
         Intensity label: `intensity:low`, `intensity:high`, `intensity:max`.
 
   - type: textarea
-    id: objective
-    attributes:
-      label: Objective
-      description: One sentence. The desired end state, not the steps to get there.
-    validations:
-      required: true
-
-  - type: textarea
     id: context
     attributes:
       label: Context
-      description: Why this matters. Link related issues, PRs, or docs.
+      description: All relevant context for the issue.
     validations:
-      required: false
+      required: true
 
