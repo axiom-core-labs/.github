@@ -37,5 +37,7 @@ Closes #
 
 Optional — used when an OpenCode agent runs on this PR via `/opencode` in a comment.
 
-- Model label: `model:flash` (default), `model:deepseek`, `model:sonnet` — or `model=<provider/model>` in the comment
+- Model label: full model id with a `model:` prefix, e.g. `model:openrouter/qwen/qwen3.8-flash`
+  (default when unlabelled: `model:openrouter/deepseek/deepseek-v4.1-flash`; see the Agent task issue
+  template for the full allowed list) — or `model=<provider/model>` in the comment
 - Intensity label: `intensity:low` (minimal), `intensity:high`, `intensity:max` — or `intensity=<low|high|max>` in the comment
