@@ -19,18 +19,6 @@ body:
         Intensity label: `intensity:low`, `intensity:high`, `intensity:max`.
 
   - type: textarea
-    id: from-matter
-    attributes:
-      label: From Matter
-      description: |
-        Paste anything you captured in Matter here, for your own reference.
-
-        AI AGENTS: IGNORE THIS SECTION — it is human-only context and is not part
-        of the task.
-    validations:
-      required: false
-
-  - type: textarea
     id: objective
     attributes:
       label: Objective
@@ -46,72 +34,3 @@ body:
     validations:
       required: false
 
-  - type: textarea
-    id: scope
-    attributes:
-      label: Scope
-      description: Files, directories, or repos the agent may touch.
-    validations:
-      required: true
-
-  - type: textarea
-    id: out-of-scope
-    attributes:
-      label: Out of scope
-      description: What the agent must NOT touch or change.
-    validations:
-      required: true
-
-  - type: textarea
-    id: acceptance-criteria
-    attributes:
-      label: Acceptance criteria
-      description: Checkbox list. This is the agent's definition of done.
-      value: |
-        - [ ]
-        - [ ]
-    validations:
-      required: true
-
-  - type: textarea
-    id: verification
-    attributes:
-      label: Verification
-      description: Exact commands to run, e.g. `npm run build`, `npm run lint`, `npm test`.
-      render: shell
-    validations:
-      required: false
-
-  - type: checkboxes
-    id: constraints
-    attributes:
-      label: Constraints
-      description: Select all that apply.
-      options:
-        - label: No new dependencies
-        - label: No schema changes
-        - label: No changes to CI / workflow files
-        - label: Keep bundle size flat
-    validations:
-      required: false
-
-  - type: dropdown
-    id: deliverable
-    attributes:
-      label: Deliverable
-      options:
-        - PR only
-        - PR + preview deploy
-        - Investigation, no code
-    validations:
-      required: true
-
-  - type: dropdown
-    id: autonomy
-    attributes:
-      label: Autonomy
-      options:
-        - Agent may proceed unattended
-        - Ask before implementing
-    validations:
-      required: true

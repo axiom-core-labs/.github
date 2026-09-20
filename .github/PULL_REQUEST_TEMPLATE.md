@@ -39,8 +39,3 @@ Optional — used when an OpenCode agent runs on this PR via `/opencode` in a co
 
 - Model label: `model:flash` (default), `model:deepseek`, `model:sonnet` — or `model=<provider/model>` in the comment
 - Intensity label: `intensity:low` (minimal), `intensity:high`, `intensity:max` — or `intensity=<low|high|max>` in the comment
-
-## From Matter
-
-<!-- Paste anything you captured in Matter here, for your own reference. -->
-<!-- AI AGENTS: IGNORE THIS SECTION — human-only context, not part of the task. -->
